@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HandTalk</title>
+</head>
+<style>
+    #abc,#txt,#voca{display: none;}
+    body{height: 100%; width: 100%; text-align: center;}
+    head{height: 25%;}
+    main{height: 50%;}
+    footer{height: 25%;}
+    .btnA{height: 150px; width: 150px; text-align: center; border: 2.5px black solid; margin: 5px;}
+    .btnV{height: 150px; width: 150px; text-align: center;}
+    .lt5{height: 150px; width: 150px; text-align: center;}
+</style>
+<body>
+    <header>
+        <section class="titulo"> 
+            <h1>HandTalk</h1>
+            <h3>(Habla con las manos)</h3>
+        </section>
+        <!-- <section class="btnH"> 
+            <button onclick="mostrarAbc()">ABECEDARIO</button>
+            <button onclick="mostrartxt()">TEXRO A SEÑAS</button>
+            <button onclick="mostrarVoca()">VOCALES</button>
+        </section> -->
+    </header>
+    <main>
+        <fieldset id="abc"><legend>ABECEDARIO</legend>
+            <button class="btnA"><h3>A</h3></button><button class="btnA"><h3>B</h3></button> 
+            <button class="btnA"><h3>C</h3></button><button class="btnA"><h3>D</h3></button>
+            <button class="btnA"><h3>E</h3></button><button class="btnA"><h3>F</h3></button><br>
+
+            <button class="btnA"><h3>G</h3></button><button class="btnA"><h3>H</h3></button>
+            <button class="btnA"><h3>I</h3></button><button class="btnA"><h3>J</h3></button> 
+            <button class="btnA"><h3>K</h3></button><button class="btnA"><h3>L</h3></button><br>
+            
+            <button class="btnA"><h3>M</h3></button><button class="btnA"><h3>N</h3></button>
+            <button class="btnA"><h3>Ñ</h3></button><button class="btnA"><h3>O</h3></button>
+            <button class="btnA"><h3>P</h3></button><button class="btnA"><h3>Q</h3></button><br>
+
+            <button class="btnA"><h3>R</h3></button><button class="btnA"><h3>S</h3></button> 
+            <button class="btnA"><h3>T</h3></button><button class="btnA"><h3>U</h3></button>
+            <button class="btnA"><h3>V</h3></button><button class="btnA"><h3>W</h3></button> <br>
+
+            <button class="btnA"><h3>X</h3></button><button class="btnA"a><h3>Y</h3></button>
+            <button class="btnA"><h3>Z</h3></button>
+        </fieldset>
+        <fieldset id="txt"> <legend>TEXTO A SEÑAS</legend>
+            <input class="lt5" type="text" maxlength="1">
+            <input class="lt5" type="text" maxlength="1">
+            <input class="lt5" type="text" maxlength="1">
+            <input class="lt5" type="text" maxlength="1">
+            <input class="lt5" type="text" maxlength="1"> <br>
+            <button>Traducir</button>
+        </fieldset>
+        <fieldset id="voca"><legend>VOCALES</legend>
+            <button class="btnV"><h3>A</h3></button><button class="btnV"><h3>E</h3></button>
+            <button class="btnV"><h3>I</h3></button><button class="btnV"><h3>O</h3></button>
+            <button class="btnV"><h3>U</h3>
+        </fieldset>
+    </main>
+    <footer>
+       
+    </footer>
+    <script>
+        function mostrarAbc(){
+            document.getElementById("abc").style.display = "block"
+            document.getElementById("txt").style.display = "none"
+            document.getElementById("voca").style.display = "none"
+            
+            
+        };
+        function mostrarVoca(){
+            document.getElementById("abc").style.display = "none"
+            document.getElementById("txt").style.display = "none"
+            document.getElementById("voca").style.display = "block"
+        };
+        function mostrartxt(){
+            document.getElementById("abc").style.display = "none"
+            document.getElementById("txt").style.display = "block"
+            document.getElementById("voca").style.display = "none"
+        };
+    </script>
+</body>
+</html>
